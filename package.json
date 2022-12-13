@@ -1,0 +1,27 @@
+{
+  "name": "coiner-api",
+  "version": "1.0.0",
+  "description": "Coiner API is a public API for retrieving market data about the most popular cryptocurrencies in the market.",
+  "main": "index.js",
+  "scripts": {
+    "build": "node index.js",
+    "dev": "nodemon index.js"
+  },
+  "keywords": [],
+  "author": "Asael Hernández <asael.dev@gmail.com>",
+  "license": "ISC",
+  "dependencies": {
+    "@hapi/boom": "^10.0.0",
+    "axios": "^1.2.1",
+    "bcrypt": "^5.1.0",
+    "cors": "^2.8.5",
+    "dotenv": "^16.0.3",
+    "express": "^4.18.2",
+    "jsonwebtoken": "^8.5.1",
+    "passport": "^0.6.0",
+    "passport-jwt": "^4.0.0",
+    "pg": "^8.8.0",
+    "pg-hstore": "^2.3.4",
+    "sequelize": "^6.27.0"
+  }
+}
