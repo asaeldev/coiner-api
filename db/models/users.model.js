@@ -57,7 +57,14 @@ const UsersSchema = {
 };
 
 class Users extends Model {
-  static associate(models) {}
+  static associate(models) {
+    // this.hasMany(models.Alerts, {
+    //   as: "Alerts",
+    //   foreignKey: {
+    //     allowNull: false,
+    //   },
+    // });
+  }
 
   static config(sequelize) {
     return {
