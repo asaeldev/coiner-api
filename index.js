@@ -10,7 +10,11 @@ const {
 } = require("./middlewares/error.handler");
 
 const app = express();
-const allowedDomains = ["http://localhost:3000"];
+
+const allowedDomains =
+  config.env === "production"
+    ? ["https://asaeldev-coiner-ui.herokuapp.com/"]
+    : ["http://localhost:3000"];
 
 const corsSettings = {
   origin: (origin, callback) => {
